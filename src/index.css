@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: "Karla", sans-serif;
+   background: #E5E7EB;
+   line-height: 1.35;
+}
+
+h3 {
+  margin: .5rem 0;
+}
+
+.heading {
+  margin: 1em 0;
+}
+
+.comp_container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.btns-sq {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1em;
+}
+
+button {
+  padding: .7em 2.7em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #1F2937;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.button-square {
+  border-radius: 4px;
+}
+
+button.button-pill {
+  border-radius: 20px;
+}
+
+button.button-gray {
+  background: #F3F4F6;
+}
+
+button.button-red {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+button.button-yellow {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+button.button-green {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+button.button-blue {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+button.button-indigo {
+  background: #E0E7FF;
+  color: #3730A3;
+}
+
+button.button-purple {
+  background: #EDE9FE;
+  color: #5B21B6;
+}
+
+button.button-pink {
+  background: #FCE7F3;
+  color: #9D174D;
+}
+
+/* Banner styles */
+.banner {
+  max-width: 896px;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.35;
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1em;
+}
+
+.banner .right {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.banner .left > svg {
+  color: #34D399;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.banner h2 {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.banner.banner-success {
+  background-color: #ECFDF5;
+  color: #047857;
+}
+
+/* Error */
+
+.banner.banner-error {
+  background-color: #FEF2F2;
+  color: #B45309;
+}
+
+.banner.banner-error h2 {
+  color: #92400E;
+}
+
+.banner.banner-error > .left > svg {
+  color: #F87171;
+}
+
+/* Neutral */
+.banner.banner-neutral {
+  background-color: #EFF6FF;
+  color: #1C51B9;
+}
+
+.banner.banner-neutral h2 {
+  color: #1E40AF;
+}
+
+.banner.banner-neutral > .left > svg {
+  color: #60A5FA;
+}
+
+/* Warning */
+.banner.banner-warning {
+  background-color: #FFFBEB;
+  color: #B45309;
+}
+
+.banner.banner-warning h2 {
+  color: #92400E;
+}
+
+.banner.banner-warning > .left > svg {
+  color: #FBBF24;
+}
