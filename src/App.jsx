@@ -4,6 +4,10 @@ import { AiFillCheckCircle } from "react-icons/ai";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { AiFillInfoCircle } from "react-icons/ai";
 import { AiTwotoneWarning } from "react-icons/ai";
+import { AiOutlineCloudDownload } from "react-icons/ai";
+import { AiFillRocket } from "react-icons/ai";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import Card from "./components/Card";
 
 export default function App() {
   return (
@@ -98,6 +102,33 @@ export default function App() {
             variant="neutral"
             multiline={false} 
           />
+        </div>
+
+        {/* Card */}
+        <h2 className="heading">Cards</h2>
+        <div className="cards">
+          <Card 
+            title="Easy Deployment" 
+            description="Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis."
+            icon={<AiOutlineCloudDownload />}
+            iconBg="#4F80FF"
+          />
+
+          <Card 
+            title="Blazing Fast" 
+            description="Optimized pipelines that cut your build times in half. Ship features at the speed of thought."
+            icon={<AiFillRocket />}
+            iconBg="#10B981"
+          />
+
+          <Card 
+            title="Secure by Default" 
+            description="End-to-end encryption and zero-trust architecture keep your data safe without the hassle."
+            icon={<AiFillSafetyCertificate />}
+            iconBg="#F59E0B"
+          />
+
+          
         </div>
       
     </>
