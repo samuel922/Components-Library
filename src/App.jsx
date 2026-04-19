@@ -7,7 +7,9 @@ import { AiTwotoneWarning } from "react-icons/ai";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { AiFillRocket } from "react-icons/ai";
 import { AiFillSafetyCertificate } from "react-icons/ai";
+import { AiTwotoneBank } from "react-icons/ai";
 import Card from "./components/Card";
+import Testimonial from "./components/Testimonial";
 
 export default function App() {
   return (
@@ -126,9 +128,26 @@ export default function App() {
             description="End-to-end encryption and zero-trust architecture keep your data safe without the hassle."
             icon={<AiFillSafetyCertificate />}
             iconBg="#F59E0B"
+          />       
+        </div>
+
+        <h2 className="heading">Testimonials</h2>
+        <div className="testimonials">
+          <Testimonial 
+            quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
+            author="May Andersons"
+            role="Workcation, CTO"
+            photoSrc="./src/assets/pic.jpg"
+            portraitAlt="This is the portrait of the testimoner"
           />
 
-          
+           <Testimonial 
+            quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
+            author="May Andersons"
+            role="CTO"
+            compName="Workcation"
+            compLogo={<AiTwotoneBank />}
+          />
         </div>
       
     </>

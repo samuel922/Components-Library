@@ -5,7 +5,6 @@ export default function Banner({title, text, icon, variant, multiline}) {
     const varaintClass = `banner banner-${variant}`
     const allClasses = classnames(varaintClass)
 
-    // console.log(allClasses)
     return (
         <div className={allClasses}>
             <div className="left">

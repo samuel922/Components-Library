@@ -231,3 +231,123 @@ button.button-pink {
 .icon-container svg {
   font-size: 2rem;
 }
+
+/* Testimonials */
+/* Outer wrapper to give space for the overflowing image */
+.testimonials {
+  margin: 30px 0;
+}
+.tc-wrapper {
+  padding: 40px 32px 40px 0;
+  margin: 1.2em 0;
+  position: relative;
+}
+
+.tc-container {
+  width: 100%;
+  padding: 32px 48px 32px 330px;
+  min-height: 220px;
+  background-color: #2545B8;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.tc-container__no-photo {
+  background: #F9FAFB;
+  padding: 32px 48px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-wrapper {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tc-photo {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: 30px;        
+  height: calc(100% + 40px); 
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.tc-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.tc-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tc-text-no {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.tc-text::before {
+  content: "\201c";
+  display: inline-block;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  color: gray;
+}
+
+
+.tc-author {
+  margin-top: 8px;
+}
+
+.tc-author strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tc-author span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.no-photo__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2em;
+}
+
+.no-photo__title span > svg {
+  color: #2E59F3;
+}
+
+.separator {
+  color: #2E59F3;
+  margin: 0 10px;
+}
