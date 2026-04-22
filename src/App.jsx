@@ -10,6 +10,7 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 import { AiTwotoneBank } from "react-icons/ai";
 import Card from "./components/Card";
 import Testimonial from "./components/Testimonial";
+import Tooltip from "./components/Tooltip";
 
 export default function App() {
   return (
@@ -147,6 +148,26 @@ export default function App() {
             role="CTO"
             compName="Workcation"
             compLogo={<AiTwotoneBank />}
+          />
+        </div>
+
+        <div className="tooltips">
+          <Tooltip 
+            title="Archive notes"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+            variant="dark"
+          />
+
+          <Tooltip 
+            title="Archive notes"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+            variant="blue"
+          />
+
+          <Tooltip 
+            title="Archive notes"
+            body="Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur."
+            variant="light"
           />
         </div>
       

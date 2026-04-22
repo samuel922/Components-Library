@@ -351,3 +351,161 @@ button.button-pink {
   color: #2E59F3;
   margin: 0 10px;
 }
+
+@media (max-width: 706px) {
+  .tc-wrapper {
+    padding: 140px 0 0 0; /* top space for the overflowing image */
+  }
+
+  .tc-container {
+    padding: 120px 24px 32px 24px; /* top padding so text clears the image */
+    align-items: flex-start;
+  }
+
+  .tc-photo {
+    width: 280px;
+    height: 200px;
+    left: 50%;
+    transform: translateX(-50%); /* center horizontally */
+    top: -100px;                  /* protrudes above the blue card */
+    height: 210px;               /* fixed height, not calc */
+    border-radius: 8px;
+  }
+
+  .inner-wrapper {
+    max-width: 90%;
+  }
+}
+
+
+/* TOOLTIP */
+.tooltips {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+.tooltip {
+  position: relative;
+  max-width: 384px;
+  padding: .8em 1.6em;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  column-gap: .6em;
+  align-items: start;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+  transform: translateX(-20%);
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: inherit;
+
+}
+
+.tooltip h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark */
+
+.tooltip.tooltip-dark {
+  background: #262626;
+  color: #262626;
+}
+
+.tooltip-dark .tooltip-close,
+.tooltip-dark svg {
+  color: #fff;
+}
+
+.tooltip.tooltip-dark h2 {
+  color: #fff;
+}
+
+.tooltip.tooltip-dark .tooltip-body p {
+  color: #C7C7C7;
+}
+
+/* Blue */
+.tooltip.tooltip-blue {
+  background: #1E40AF;
+  color: #1E40AF;
+}
+.tooltip-blue .tooltip-close {
+  color: #fff;
+}
+
+.tooltip.tooltip-blue h2 {
+  color: #fff;
+}
+
+.tooltip.tooltip-blue .tooltip-body p {
+  color: #C7C7C7;
+}
+
+/* Light */
+
+.tooltip.tooltip-light {
+  background: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.tooltip-light .tooltip-close,
+.tooltip-light svg {
+  color: #111827;
+}
+
+.tooltip.tooltip-light h2 {
+  color: #111827;
+}
+
+.tooltip.tooltip-light .tooltip-body p {
+  color: #6B7280;
+}
+
+.tooltip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.tooltip-header svg {
+  font-size: 1.5rem;
+  margin-top: .35em;
+}
+
+.tooltip-body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.tooltip-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .4em;
+  padding: 0;
+}
+
+.tooltip-close {
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: end;
+
+}
